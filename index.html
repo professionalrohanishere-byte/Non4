@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Business OS</title>
+<meta name="theme-color" content="#05080d" />
+<meta name="description" content="Learn business, communication, product, sales and money — simply, and get your ideas judged." />
+
+<link rel="manifest" href="manifest.json" />
+<link rel="apple-touch-icon" href="icons/icon-192.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Business OS" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="boot-screen">
+    <div class="boot-label">INITIALIZING</div>
+    <div class="boot-ring-wrap">
+      <svg width="200" height="200" class="boot-ring-outer" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="88" fill="none" stroke="rgba(79,216,255,0.15)" stroke-width="1" stroke-dasharray="1 8" />
+      </svg>
+      <div class="boot-pct" id="boot-pct">0%</div>
+    </div>
+    <div class="boot-bar"><div class="boot-bar-fill" id="boot-bar-fill"></div></div>
+    <div class="boot-sub">LOADING BUSINESS OPERATING SYSTEM</div>
+  </div>
+
+  <div id="app" class="hidden">
+    <div class="hud-grid"></div>
+    <div class="vignette"></div>
+    <div class="ambient-field" id="ambient-field"></div>
+
+    <div class="hologram-core">
+      <div class="holo-ring holo-ring-a"></div>
+      <div class="holo-ring holo-ring-b"></div>
+      <div class="holo-glow"></div>
+    </div>
+
+    <div class="console">
+      <div class="bracketed">
+        <span class="br tl"></span><span class="br tr"></span><span class="br bl"></span><span class="br br-c"></span>
+        <div class="topbar">
+          <div class="topbar-left">
+            <span class="pulse-dot">●</span>
+            <span class="topbar-title">BUSINESS&nbsp;OS</span>
+            <span class="topbar-sub">// GROWTH CONSOLE</span>
+          </div>
+          <div class="topbar-clock" id="clock">--:--:--</div>
+        </div>
+      </div>
+
+      <div class="main-grid">
+        <div class="bracketed nav-rail-wrap">
+          <span class="br tl"></span><span class="br tr"></span><span class="br bl"></span><span class="br br-c"></span>
+          <div class="nav-rail">
+            <div class="rail-label">MODULES</div>
+            <div id="nav-buttons"></div>
+          </div>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav"></div>
+
+        <div class="bracketed panel-wrap gold">
+          <span class="br tl gold"></span><span class="br tr gold"></span><span class="br bl gold"></span><span class="br br-c gold"></span>
+          <div class="panel" id="panel"></div>
+        </div>
+
+        <div class="bracketed info-rail-wrap">
+          <span class="br tl"></span><span class="br tr"></span><span class="br bl"></span><span class="br br-c"></span>
+          <div class="info-rail">
+            <div class="rail-label">PROGRESS</div>
+            <div id="progress-bars"></div>
+            <div class="footnote">Everything here stays on your device. AI feedback (optional) is the only part that needs internet.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="lessons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
